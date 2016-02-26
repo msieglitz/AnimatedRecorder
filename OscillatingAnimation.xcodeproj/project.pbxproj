@@ -12,9 +12,11 @@
 		1F534B221C80E4B400384906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F534B201C80E4B400384906 /* Main.storyboard */; };
 		1F534B241C80E4B400384906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F534B231C80E4B400384906 /* Assets.xcassets */; };
 		1F534B271C80E4B400384906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F534B251C80E4B400384906 /* LaunchScreen.storyboard */; };
+		3F31A01BAF0C8C2899685F66 /* Pods_OscillatingAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE44337BFDB9B2C8F28AAB5E /* Pods_OscillatingAnimation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		127BBF7BAF13134A40EA0829 /* Pods-OscillatingAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OscillatingAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-OscillatingAnimation/Pods-OscillatingAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		1F534B191C80E4B400384906 /* OscillatingAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OscillatingAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F534B1C1C80E4B400384906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F534B1E1C80E4B400384906 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		1F534B231C80E4B400384906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F534B261C80E4B400384906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F534B281C80E4B400384906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		615C165248A48F4290CD251D /* Pods-OscillatingAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OscillatingAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OscillatingAnimation/Pods-OscillatingAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		EE44337BFDB9B2C8F28AAB5E /* Pods_OscillatingAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OscillatingAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F31A01BAF0C8C2899685F66 /* Pods_OscillatingAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				1F534B1B1C80E4B400384906 /* OscillatingAnimation */,
 				1F534B1A1C80E4B400384906 /* Products */,
+				C869993FE4897A5461D70EF4 /* Pods */,
+				341CB9459CE48FE18E387E80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = OscillatingAnimation;
 			sourceTree = "<group>";
 		};
+		341CB9459CE48FE18E387E80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE44337BFDB9B2C8F28AAB5E /* Pods_OscillatingAnimation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C869993FE4897A5461D70EF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				615C165248A48F4290CD251D /* Pods-OscillatingAnimation.debug.xcconfig */,
+				127BBF7BAF13134A40EA0829 /* Pods-OscillatingAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F534B2B1C80E4B400384906 /* Build configuration list for PBXNativeTarget "OscillatingAnimation" */;
 			buildPhases = (
+				19A7A47DC765D31B7855FC17 /* Check Pods Manifest.lock */,
 				1F534B151C80E4B400384906 /* Sources */,
 				1F534B161C80E4B400384906 /* Frameworks */,
 				1F534B171C80E4B400384906 /* Resources */,
+				24F8022916757C24A456DA88 /* Embed Pods Frameworks */,
+				DE1DB19CE0E3FD13F812BD99 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19A7A47DC765D31B7855FC17 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		24F8022916757C24A456DA88 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OscillatingAnimation/Pods-OscillatingAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE1DB19CE0E3FD13F812BD99 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OscillatingAnimation/Pods-OscillatingAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F534B151C80E4B400384906 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		1F534B2C1C80E4B400384906 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615C165248A48F4290CD251D /* Pods-OscillatingAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OscillatingAnimation/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		1F534B2D1C80E4B400384906 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127BBF7BAF13134A40EA0829 /* Pods-OscillatingAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OscillatingAnimation/Info.plist;
@@ -286,6 +363,7 @@
 				1F534B2D1C80E4B400384906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
