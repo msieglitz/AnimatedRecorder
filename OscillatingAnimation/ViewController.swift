@@ -134,37 +134,6 @@ class ViewController: UIViewController, POPAnimationDelegate {
         view7HeightConstraint.pop_addAnimation(growView7, forKey: "view7HeightGrow")
     }
     
-    func pop_animationDidReachToValue(anim: POPAnimation!) {
-        switch anim.name {
-        case "view1HeightGrow":
-            //make view1 shrink
-            self.animateView1()
-            break
-        case "view2HeightGrow":
-            //make view2 shrink
-            self.animateView2()
-            break
-        case "view3HeightGrow":
-            //make view3 shrink
-            self.animateView3()
-            break
-        case "view4HeightGrow":
-            self.animateView4()
-            break
-        case "view5HeightGrow":
-            self.animateView5()
-            break
-        case "view6HeightGrow":
-            self.animateView6()
-            break
-        case "view7HeightGrow":
-            self.animateView7()
-            break
-        default:
-            return
-        }
-    }
-    
     func randomNumber(range: Range<Int> = 70...128) -> Int {
         let min = range.startIndex
         let max = range.endIndex
